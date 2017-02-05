@@ -26,7 +26,10 @@ class Setup(object):
 	    self.__encryptObj = encObj
 
 	def __setFolder(self):
-		self.__folder = "C:/Users/vlad/Documents/PythonProjects/test_files"
+		folder = input('Set path to encrypt (empty for using cwd): ')
+		if folder == '' : folder = os.getcwd()
+		print('Target folder: ' + folder)
+		self.__folder = folder
 
 	def __setAction(self):
 		action = input('Select "e" for encrypt, "d" for decrypt, or "c" for cancel: ')
