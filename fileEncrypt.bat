@@ -1,1 +1,1 @@
-python {path to script folder}/encryptFiles.py
+python {path to script folder}/main.py
